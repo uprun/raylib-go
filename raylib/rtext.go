@@ -63,7 +63,7 @@ func LoadFontEx(fileName string, fontSize int32, fontChars []rune) Font {
 	return v
 }
 
-// LoadFontEx - Load Font from file with extended parameters
+// LoadFontEx - Load Font from file with extended parameters by number of runes
 func LoadFontExByRunesNumber(fileName string, fontSize int32, runesNumber int32) Font {
 	ccharsCount := (C.int)(runesNumber)
 	cfileName := C.CString(fileName)
