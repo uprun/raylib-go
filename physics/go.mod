@@ -1,4 +1,4 @@
-module github.com/gen2brain/raylib-go/physics
+module github.com/uprun/raylib-go/physics
 
 go 1.21
 

@@ -1,4 +1,4 @@
-module github.com/gen2brain/raylib-go/rres
+module github.com/uprun/raylib-go/rres
 
 go 1.21
 
