@@ -70,7 +70,7 @@ func LoadFontExByRunesNumber(fileName string, fontSize int32, runesNumber int32)
 	defer C.free(unsafe.Pointer(cfileName))
 	cfontSize := (C.int)(fontSize)
 	
-	ret := C.LoadFontEx(cfileName, cfontSize, nil, runesNumber)
+	ret := C.LoadFontEx(cfileName, cfontSize, nil, ccharsCount)
 	v := newFontFromPointer(unsafe.Pointer(&ret))
 	return v
 }
